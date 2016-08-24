@@ -1,15 +1,7 @@
 {
 	"name"             : "actionable/gravity-forms-country-province-dropdown",
-	"description"      : "A custom installer to handle deploying WordPress with composer",
-	"type"             : "composer-plugin",
-	"minimum-stability": "dev",
-	"require"          : {
-		"composer-plugin-api": "^1.0"
-	},
-	"require-dev"      : {
-		"composer/composer": "1.0.*@dev"
-	},
-	"conflict"         : {
-		"composer/installers": "<1.0.6"
-	}
+	"type"             : "wordpress-plugin",
+	"require": {
+        "composer/installers": "~1.0"
+    }
 }
