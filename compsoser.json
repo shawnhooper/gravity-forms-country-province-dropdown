@@ -1,6 +1,15 @@
 {
 	"name"             : "actionable/gravity-forms-country-province-dropdown",
 	"type"             : "wordpress-plugin",
+	"license"	: "MIT",
+    "authors": [
+        {
+            "name": "Shawn Hooper",
+            "email": "shawn@actionable.co",
+            "homepage": "https://www.shawnhooper.ca/",
+            "role": "Chief Technology Officer"
+        }
+    ],
 	"require": {
         "composer/installers": "~1.0"
     }
