@@ -1,7 +1,7 @@
 {
-	"name"             : "actionable/gravity-forms-country-province-dropdown",
-	"type"             : "wordpress-plugin",
-	"license"	: "MIT",
+	"name": "actionable/gravity-forms-country-province-dropdown",
+	"type": "wordpress-plugin",
+	"license": "MIT",
     "authors": [
         {
             "name": "Shawn Hooper",
