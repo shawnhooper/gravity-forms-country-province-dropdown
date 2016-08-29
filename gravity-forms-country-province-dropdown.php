@@ -2,7 +2,7 @@
 /*
 Plugin Name: Gravity Forms Country and Province Dropdowns
 Description: Provides logic to populate Gravity Forms dropdowns with country and province/state names
-Version: 1.0.3
+Version: 1.0.4
 Author: Shawn Hooper, Actionable
 */
 
@@ -359,7 +359,15 @@ class ActionableGravityCountryProvince {
 
 	public function populate_countries_and_provinces( $form ) {
 
-		if ( $form['title'] !== 'Contact Us' ) {
+		$has_country_list = false;
+		foreach ( $form['fields'] as &$field ) {
+			if ( $field->inputName == 'country_list' ) {
+				$has_country_list = true;
+				break;
+			}
+		}
+
+		if ( ! $has_country_list ) {
 			return $form;
 		}
 
