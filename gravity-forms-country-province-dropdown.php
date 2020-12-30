@@ -2,7 +2,7 @@
 /*
 Plugin Name: Gravity Forms Country and Province Dropdowns
 Description: Provides logic to populate Gravity Forms dropdowns with country and province/state names
-Version: 1.0.4
+Version: 1.0.5
 Author: Shawn Hooper, Actionable
 */
 
@@ -348,6 +348,119 @@ class ActionableGravityCountryProvince {
 		['value' => 'WY', 'text' => 'Wyoming'],		
 	);
 
+    var $italian_provinces = array(
+        ['value' => 'AG', 'text' => 'Agrigento'],
+        ['value' => 'AL', 'text' => 'Alessandria'],
+        ['value' => 'AN', 'text' => 'Ancona'],
+        ['value' => 'AO', 'text' => 'Aosta'],
+        ['value' => 'AR', 'text' => 'Arezzo'],
+        ['value' => 'AP', 'text' => 'Ascoli Piceno'],
+        ['value' => 'AT', 'text' => 'Asti'],
+        ['value' => 'AV', 'text' => 'Avellino'],
+        ['value' => 'BA', 'text' => 'Bari'],
+        ['value' => 'BT', 'text' => 'Barletta-Andria-Trani'],
+        ['value' => 'BL', 'text' => 'Belluno'],
+        ['value' => 'BN', 'text' => 'Benevento'],
+        ['value' => 'BG', 'text' => 'Bergamo'],
+        ['value' => 'BI', 'text' => 'Biella'],
+        ['value' => 'BO', 'text' => 'Bologna'],
+        ['value' => 'BZ', 'text' => 'Bolzano'],
+        ['value' => 'BS', 'text' => 'Brescia'],
+        ['value' => 'BR', 'text' => 'Brindisi'],
+        ['value' => 'CA', 'text' => 'Cagliari'],
+        ['value' => 'CL', 'text' => 'Caltanissetta'],
+        ['value' => 'CB', 'text' => 'Campobasso'],
+        ['value' => 'CI', 'text' => 'Carbonia-Iglesias'],
+        ['value' => 'CE', 'text' => 'Caserta'],
+        ['value' => 'CT', 'text' => 'Catania'],
+        ['value' => 'CZ', 'text' => 'Catanzaro'],
+        ['value' => 'CH', 'text' => 'Chieti'],
+        ['value' => 'CO', 'text' => 'Como'],
+        ['value' => 'CS', 'text' => 'Cosenza'],
+        ['value' => 'CR', 'text' => 'Cremona'],
+        ['value' => 'KR', 'text' => 'Crotone'],
+        ['value' => 'CN', 'text' => 'Cuneo'],
+        ['value' => 'EN', 'text' => 'Enna'],
+        ['value' => 'FM', 'text' => 'Fermo'],
+        ['value' => 'FE', 'text' => 'Ferrara'],
+        ['value' => 'FI', 'text' => 'Firenze'],
+        ['value' => 'FG', 'text' => 'Foggia'],
+        ['value' => 'FC', 'text' => 'Forlì-Cesena'],
+        ['value' => 'FR', 'text' => 'Frosinone'],
+        ['value' => 'GE', 'text' => 'Genova'],
+        ['value' => 'GO', 'text' => 'Gorizia'],
+        ['value' => 'GR', 'text' => 'Grosseto'],
+        ['value' => 'IM', 'text' => 'Imperia'],
+        ['value' => 'IS', 'text' => 'Isernia'],
+        ['value' => 'SP', 'text' => 'La Spezia'],
+        ['value' => 'AQ', 'text' => 'L`Aquila'],
+        ['value' => 'LT', 'text' => 'Latina'],
+        ['value' => 'LE', 'text' => 'Lecce'],
+        ['value' => 'LC', 'text' => 'Lecco'],
+        ['value' => 'LI', 'text' => 'Livorno'],
+        ['value' => 'LO', 'text' => 'Lodi'],
+        ['value' => 'LU', 'text' => 'Lucca'],
+        ['value' => 'MC', 'text' => 'Macerata'],
+        ['value' => 'MN', 'text' => 'Mantova'],
+        ['value' => 'MS', 'text' => 'Massa-Carrara'],
+        ['value' => 'MT', 'text' => 'Matera'],
+        ['value' => 'ME', 'text' => 'Messina'],
+        ['value' => 'MI', 'text' => 'Milano'],
+        ['value' => 'MO', 'text' => 'Modena'],
+        ['value' => 'MB', 'text' => 'Monza e della Brianza'],
+        ['value' => 'NA', 'text' => 'Napoli'],
+        ['value' => 'NO', 'text' => 'Novara'],
+        ['value' => 'NU', 'text' => 'Nuoro'],
+        ['value' => 'OT', 'text' => 'Olbia-Tempio'],
+        ['value' => 'OR', 'text' => 'Oristano'],
+        ['value' => 'PD', 'text' => 'Padova'],
+        ['value' => 'PA', 'text' => 'Palermo'],
+        ['value' => 'PR', 'text' => 'Parma'],
+        ['value' => 'PV', 'text' => 'Pavia'],
+        ['value' => 'PG', 'text' => 'Perugia'],
+        ['value' => 'PU', 'text' => 'Pesaro e Urbino'],
+        ['value' => 'PE', 'text' => 'Pescara'],
+        ['value' => 'PC', 'text' => 'Piacenza'],
+        ['value' => 'PI', 'text' => 'Pisa'],
+        ['value' => 'PT', 'text' => 'Pistoia'],
+        ['value' => 'PN', 'text' => 'Pordenone'],
+        ['value' => 'PZ', 'text' => 'Potenza'],
+        ['value' => 'PO', 'text' => 'Prato'],
+        ['value' => 'RG', 'text' => 'Ragusa'],
+        ['value' => 'RA', 'text' => 'Ravenna'],
+        ['value' => 'RC', 'text' => 'Reggio Calabria'],
+        ['value' => 'RE', 'text' => 'Reggio Emilia'],
+        ['value' => 'RI', 'text' => 'Rieti'],
+        ['value' => 'RN', 'text' => 'Rimini'],
+        ['value' => 'RM', 'text' => 'Roma'],
+        ['value' => 'RO', 'text' => 'Rovigo'],
+        ['value' => 'SA', 'text' => 'Salerno'],
+        ['value' => 'VS', 'text' => 'Medio Campidano'],
+        ['value' => 'SS', 'text' => 'Sassari'],
+        ['value' => 'SV', 'text' => 'Savona'],
+        ['value' => 'SI', 'text' => 'Siena'],
+        ['value' => 'SR', 'text' => 'Siracusa'],
+        ['value' => 'SO', 'text' => 'Sondrio'],
+        ['value' => 'TA', 'text' => 'Taranto'],
+        ['value' => 'TE', 'text' => 'Teramo'],
+        ['value' => 'TR', 'text' => 'Terni'],
+        ['value' => 'TO', 'text' => 'Torino'],
+        ['value' => 'OG', 'text' => 'Ogliastra'],
+        ['value' => 'TP', 'text' => 'Trapani'],
+        ['value' => 'TN', 'text' => 'Trento'],
+        ['value' => 'TV', 'text' => 'Treviso'],
+        ['value' => 'TS', 'text' => 'Trieste'],
+        ['value' => 'UD', 'text' => 'Udine'],
+        ['value' => 'VA', 'text' => 'Varese'],
+        ['value' => 'VE', 'text' => 'Venezia'],
+        ['value' => 'VB', 'text' => 'Verbano-Cusio-Ossola'],
+        ['value' => 'VC', 'text' => 'Vercelli'],
+        ['value' => 'VR', 'text' => 'Verona'],
+        ['value' => 'VV', 'text' => 'Vibo Valentia'],
+        ['value' => 'VI', 'text' => 'Vicenza'],
+        ['value' => 'VT', 'text' => 'Viterbo'],
+    );
+
 	function __construct() {
 		add_filter( 'gform_pre_render', array( $this, 'populate_countries_and_provinces' ) );
 		add_filter( 'gform_pre_validation', array( $this, 'populate_countries_and_provinces' ) );
@@ -388,6 +501,10 @@ class ActionableGravityCountryProvince {
 				$field->choices = $this->american_states;
 				continue;
 			}
+            if ( $field->inputName == 'provinces_it' ) {
+                $field->choices = $this->italian_provinces;
+                continue;
+            }
 		}
 
 		return $form;
@@ -402,6 +519,7 @@ class ActionableGravityCountryProvince {
 		$country_ca = '';
 		$country_au = '';
 		$country_us = '';
+        $country_it = '';
 		$country_list = '';
 
 		foreach ( $form['fields'] as &$field ) {
@@ -421,6 +539,9 @@ class ActionableGravityCountryProvince {
 				case 'states_us':
 					$country_us = 'input_' . $field->id;
 					break;
+                case 'provinces_it':
+                    $country_it = 'input_' . $field->id;
+                    break;
 			}
 		}
 
@@ -438,6 +559,9 @@ class ActionableGravityCountryProvince {
 			case 'US':
 				$_POST[$hiddenFieldName] = $_POST[$country_us];
 				break;
+            case 'IT':
+                $_POST[$hiddenFieldName] = $_POST[$country_it];
+                break;
 		}
 
 		return $form;
